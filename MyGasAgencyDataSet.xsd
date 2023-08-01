@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MyGasAgencyDataSet" targetNamespace="http://tempuri.org/MyGasAgencyDataSet.xsd" xmlns:mstns="http://tempuri.org/MyGasAgencyDataSet.xsd" xmlns="http://tempuri.org/MyGasAgencyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ESSConn" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ESSConn (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ESSConn.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ComplaintsViewTableAdapter" GeneratorDataComponentClassName="ComplaintsViewTableAdapter" Name="ComplaintsView" UserDataComponentName="ComplaintsViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ESSConn (Web.config)" DbObjectName="MyGasAgency.dbo.ComplaintsView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ComplaintID, ConsumerNo, TempID, ConsumerName, ConsumerMob, ConsumerAddress, ComplaintDetails, MachenicName, ComplaintStatus, CreatedBy, UserCr, DateCr FROM dbo.ComplaintsView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ComplaintID" DataSetColumn="ComplaintID" />
+              <Mapping SourceColumn="ConsumerNo" DataSetColumn="ConsumerNo" />
+              <Mapping SourceColumn="TempID" DataSetColumn="TempID" />
+              <Mapping SourceColumn="ConsumerName" DataSetColumn="ConsumerName" />
+              <Mapping SourceColumn="ConsumerMob" DataSetColumn="ConsumerMob" />
+              <Mapping SourceColumn="ConsumerAddress" DataSetColumn="ConsumerAddress" />
+              <Mapping SourceColumn="ComplaintDetails" DataSetColumn="ComplaintDetails" />
+              <Mapping SourceColumn="MachenicName" DataSetColumn="MachenicName" />
+              <Mapping SourceColumn="ComplaintStatus" DataSetColumn="ComplaintStatus" />
+              <Mapping SourceColumn="CreatedBy" DataSetColumn="CreatedBy" />
+              <Mapping SourceColumn="UserCr" DataSetColumn="UserCr" />
+              <Mapping SourceColumn="DateCr" DataSetColumn="DateCr" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EnquiryViewTableAdapter" GeneratorDataComponentClassName="EnquiryViewTableAdapter" Name="EnquiryView" UserDataComponentName="EnquiryViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ESSConn (Web.config)" DbObjectName="MyGasAgency.dbo.EnquiryView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT EnqID, TempID, ConsumerNo, Other, UserCr, DateCr, EnquiryListID, UserName, Enquiry, ConsumerName, ConsumerMob, ConsumerAddress FROM dbo.EnquiryView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EnqID" DataSetColumn="EnqID" />
+              <Mapping SourceColumn="TempID" DataSetColumn="TempID" />
+              <Mapping SourceColumn="ConsumerNo" DataSetColumn="ConsumerNo" />
+              <Mapping SourceColumn="Other" DataSetColumn="Other" />
+              <Mapping SourceColumn="UserCr" DataSetColumn="UserCr" />
+              <Mapping SourceColumn="DateCr" DataSetColumn="DateCr" />
+              <Mapping SourceColumn="EnquiryListID" DataSetColumn="EnquiryListID" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="Enquiry" DataSetColumn="Enquiry" />
+              <Mapping SourceColumn="ConsumerName" DataSetColumn="ConsumerName" />
+              <Mapping SourceColumn="ConsumerMob" DataSetColumn="ConsumerMob" />
+              <Mapping SourceColumn="ConsumerAddress" DataSetColumn="ConsumerAddress" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RequestViewTableAdapter" GeneratorDataComponentClassName="RequestViewTableAdapter" Name="RequestView" UserDataComponentName="RequestViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ESSConn (Web.config)" DbObjectName="MyGasAgency.dbo.RequestView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ReqID, ConsumerNo, Remark, UserCr, DateCr, TempID, RequestListID, Requests, UserName, ConsumerName, ConsumerMob, ConsumerAddress, Status, ResolveBy, ResolveDate FROM dbo.RequestView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ReqID" DataSetColumn="ReqID" />
+              <Mapping SourceColumn="ConsumerNo" DataSetColumn="ConsumerNo" />
+              <Mapping SourceColumn="Remark" DataSetColumn="Remark" />
+              <Mapping SourceColumn="UserCr" DataSetColumn="UserCr" />
+              <Mapping SourceColumn="DateCr" DataSetColumn="DateCr" />
+              <Mapping SourceColumn="TempID" DataSetColumn="TempID" />
+              <Mapping SourceColumn="RequestListID" DataSetColumn="RequestListID" />
+              <Mapping SourceColumn="Requests" DataSetColumn="Requests" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="ConsumerName" DataSetColumn="ConsumerName" />
+              <Mapping SourceColumn="ConsumerMob" DataSetColumn="ConsumerMob" />
+              <Mapping SourceColumn="ConsumerAddress" DataSetColumn="ConsumerAddress" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="ResolveBy" DataSetColumn="ResolveBy" />
+              <Mapping SourceColumn="ResolveDate" DataSetColumn="ResolveDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ResolvedComplaintsViewTableAdapter" GeneratorDataComponentClassName="ResolvedComplaintsViewTableAdapter" Name="ResolvedComplaintsView" UserDataComponentName="ResolvedComplaintsViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ESSConn (Web.config)" DbObjectName="MyGasAgency.dbo.ResolvedComplaintsView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ComplaintID, ConsumerNo, TempID, ConsumerName, ConsumerMob, ConsumerAddress, ComplaintDetails, MachenicName, ComplaintStatus, CreatedBy, UserCr, DateCr, MachenicID, InvoiceNo, AttendedDate, Discount, Total, ResolveBy, ResolvedBy, AttendedRemark FROM dbo.ResolvedComplaintsView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ComplaintID" DataSetColumn="ComplaintID" />
+              <Mapping SourceColumn="ConsumerNo" DataSetColumn="ConsumerNo" />
+              <Mapping SourceColumn="TempID" DataSetColumn="TempID" />
+              <Mapping SourceColumn="ConsumerName" DataSetColumn="ConsumerName" />
+              <Mapping SourceColumn="ConsumerMob" DataSetColumn="ConsumerMob" />
+              <Mapping SourceColumn="ConsumerAddress" DataSetColumn="ConsumerAddress" />
+              <Mapping SourceColumn="ComplaintDetails" DataSetColumn="ComplaintDetails" />
+              <Mapping SourceColumn="MachenicName" DataSetColumn="MachenicName" />
+              <Mapping SourceColumn="ComplaintStatus" DataSetColumn="ComplaintStatus" />
+              <Mapping SourceColumn="CreatedBy" DataSetColumn="CreatedBy" />
+              <Mapping SourceColumn="UserCr" DataSetColumn="UserCr" />
+              <Mapping SourceColumn="DateCr" DataSetColumn="DateCr" />
+              <Mapping SourceColumn="MachenicID" DataSetColumn="MachenicID" />
+              <Mapping SourceColumn="InvoiceNo" DataSetColumn="InvoiceNo" />
+              <Mapping SourceColumn="AttendedDate" DataSetColumn="AttendedDate" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="ResolveBy" DataSetColumn="ResolveBy" />
+              <Mapping SourceColumn="ResolvedBy" DataSetColumn="ResolvedBy" />
+              <Mapping SourceColumn="AttendedRemark" DataSetColumn="AttendedRemark" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StockUsedViewTableAdapter" GeneratorDataComponentClassName="StockUsedViewTableAdapter" Name="StockUsedView" UserDataComponentName="StockUsedViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ESSConn (Web.config)" DbObjectName="MyGasAgency.dbo.StockUsedView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Machenic, particular, ComplaintID, Qty, RATE, AttendedDate, ParticularID, MachenicID FROM dbo.StockUsedView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Machenic" DataSetColumn="Machenic" />
+              <Mapping SourceColumn="particular" DataSetColumn="particular" />
+              <Mapping SourceColumn="ComplaintID" DataSetColumn="ComplaintID" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="RATE" DataSetColumn="RATE" />
+              <Mapping SourceColumn="AttendedDate" DataSetColumn="AttendedDate" />
+              <Mapping SourceColumn="ParticularID" DataSetColumn="ParticularID" />
+              <Mapping SourceColumn="MachenicID" DataSetColumn="MachenicID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MyGasAgencyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MyGasAgencyDataSet" msprop:Generator_UserDSName="MyGasAgencyDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ComplaintsView" msprop:Generator_TableClassName="ComplaintsViewDataTable" msprop:Generator_TableVarName="tableComplaintsView" msprop:Generator_TablePropName="ComplaintsView" msprop:Generator_RowDeletingName="ComplaintsViewRowDeleting" msprop:Generator_RowChangingName="ComplaintsViewRowChanging" msprop:Generator_RowEvHandlerName="ComplaintsViewRowChangeEventHandler" msprop:Generator_RowDeletedName="ComplaintsViewRowDeleted" msprop:Generator_UserTableName="ComplaintsView" msprop:Generator_RowChangedName="ComplaintsViewRowChanged" msprop:Generator_RowEvArgName="ComplaintsViewRowChangeEvent" msprop:Generator_RowClassName="ComplaintsViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ComplaintID" msprop:Generator_ColumnVarNameInTable="columnComplaintID" msprop:Generator_ColumnPropNameInRow="ComplaintID" msprop:Generator_ColumnPropNameInTable="ComplaintIDColumn" msprop:Generator_UserColumnName="ComplaintID" type="xs:int" />
+              <xs:element name="ConsumerNo" msprop:Generator_ColumnVarNameInTable="columnConsumerNo" msprop:Generator_ColumnPropNameInRow="ConsumerNo" msprop:Generator_ColumnPropNameInTable="ConsumerNoColumn" msprop:Generator_UserColumnName="ConsumerNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TempID" msprop:Generator_ColumnVarNameInTable="columnTempID" msprop:Generator_ColumnPropNameInRow="TempID" msprop:Generator_ColumnPropNameInTable="TempIDColumn" msprop:Generator_UserColumnName="TempID" type="xs:int" minOccurs="0" />
+              <xs:element name="ConsumerName" msprop:Generator_ColumnVarNameInTable="columnConsumerName" msprop:Generator_ColumnPropNameInRow="ConsumerName" msprop:Generator_ColumnPropNameInTable="ConsumerNameColumn" msprop:Generator_UserColumnName="ConsumerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConsumerMob" msprop:Generator_ColumnVarNameInTable="columnConsumerMob" msprop:Generator_ColumnPropNameInRow="ConsumerMob" msprop:Generator_ColumnPropNameInTable="ConsumerMobColumn" msprop:Generator_UserColumnName="ConsumerMob" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ConsumerAddress" msprop:Generator_ColumnVarNameInTable="columnConsumerAddress" msprop:Generator_ColumnPropNameInRow="ConsumerAddress" msprop:Generator_ColumnPropNameInTable="ConsumerAddressColumn" msprop:Generator_UserColumnName="ConsumerAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComplaintDetails" msprop:Generator_ColumnVarNameInTable="columnComplaintDetails" msprop:Generator_ColumnPropNameInRow="ComplaintDetails" msprop:Generator_ColumnPropNameInTable="ComplaintDetailsColumn" msprop:Generator_UserColumnName="ComplaintDetails" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MachenicName" msprop:Generator_ColumnVarNameInTable="columnMachenicName" msprop:Generator_ColumnPropNameInRow="MachenicName" msprop:Generator_ColumnPropNameInTable="MachenicNameColumn" msprop:Generator_UserColumnName="MachenicName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComplaintStatus" msprop:Generator_ColumnVarNameInTable="columnComplaintStatus" msprop:Generator_ColumnPropNameInRow="ComplaintStatus" msprop:Generator_ColumnPropNameInTable="ComplaintStatusColumn" msprop:Generator_UserColumnName="ComplaintStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserCr" msprop:Generator_ColumnVarNameInTable="columnUserCr" msprop:Generator_ColumnPropNameInRow="UserCr" msprop:Generator_ColumnPropNameInTable="UserCrColumn" msprop:Generator_UserColumnName="UserCr" type="xs:int" minOccurs="0" />
+              <xs:element name="DateCr" msprop:Generator_ColumnVarNameInTable="columnDateCr" msprop:Generator_ColumnPropNameInRow="DateCr" msprop:Generator_ColumnPropNameInTable="DateCrColumn" msprop:Generator_UserColumnName="DateCr" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EnquiryView" msprop:Generator_TableClassName="EnquiryViewDataTable" msprop:Generator_TableVarName="tableEnquiryView" msprop:Generator_TablePropName="EnquiryView" msprop:Generator_RowDeletingName="EnquiryViewRowDeleting" msprop:Generator_RowChangingName="EnquiryViewRowChanging" msprop:Generator_RowEvHandlerName="EnquiryViewRowChangeEventHandler" msprop:Generator_RowDeletedName="EnquiryViewRowDeleted" msprop:Generator_UserTableName="EnquiryView" msprop:Generator_RowChangedName="EnquiryViewRowChanged" msprop:Generator_RowEvArgName="EnquiryViewRowChangeEvent" msprop:Generator_RowClassName="EnquiryViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EnqID" msprop:Generator_ColumnVarNameInTable="columnEnqID" msprop:Generator_ColumnPropNameInRow="EnqID" msprop:Generator_ColumnPropNameInTable="EnqIDColumn" msprop:Generator_UserColumnName="EnqID" type="xs:int" />
+              <xs:element name="TempID" msprop:Generator_ColumnVarNameInTable="columnTempID" msprop:Generator_ColumnPropNameInRow="TempID" msprop:Generator_ColumnPropNameInTable="TempIDColumn" msprop:Generator_UserColumnName="TempID" type="xs:int" minOccurs="0" />
+              <xs:element name="ConsumerNo" msprop:Generator_ColumnVarNameInTable="columnConsumerNo" msprop:Generator_ColumnPropNameInRow="ConsumerNo" msprop:Generator_ColumnPropNameInTable="ConsumerNoColumn" msprop:Generator_UserColumnName="ConsumerNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Other" msprop:Generator_ColumnVarNameInTable="columnOther" msprop:Generator_ColumnPropNameInRow="Other" msprop:Generator_ColumnPropNameInTable="OtherColumn" msprop:Generator_UserColumnName="Other" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserCr" msprop:Generator_ColumnVarNameInTable="columnUserCr" msprop:Generator_ColumnPropNameInRow="UserCr" msprop:Generator_ColumnPropNameInTable="UserCrColumn" msprop:Generator_UserColumnName="UserCr" type="xs:int" minOccurs="0" />
+              <xs:element name="DateCr" msprop:Generator_ColumnVarNameInTable="columnDateCr" msprop:Generator_ColumnPropNameInRow="DateCr" msprop:Generator_ColumnPropNameInTable="DateCrColumn" msprop:Generator_UserColumnName="DateCr" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EnquiryListID" msprop:Generator_ColumnVarNameInTable="columnEnquiryListID" msprop:Generator_ColumnPropNameInRow="EnquiryListID" msprop:Generator_ColumnPropNameInTable="EnquiryListIDColumn" msprop:Generator_UserColumnName="EnquiryListID" type="xs:int" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Enquiry" msprop:Generator_ColumnVarNameInTable="columnEnquiry" msprop:Generator_ColumnPropNameInRow="Enquiry" msprop:Generator_ColumnPropNameInTable="EnquiryColumn" msprop:Generator_UserColumnName="Enquiry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConsumerName" msprop:Generator_ColumnVarNameInTable="columnConsumerName" msprop:Generator_ColumnPropNameInRow="ConsumerName" msprop:Generator_ColumnPropNameInTable="ConsumerNameColumn" msprop:Generator_UserColumnName="ConsumerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConsumerMob" msprop:Generator_ColumnVarNameInTable="columnConsumerMob" msprop:Generator_ColumnPropNameInRow="ConsumerMob" msprop:Generator_ColumnPropNameInTable="ConsumerMobColumn" msprop:Generator_UserColumnName="ConsumerMob" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ConsumerAddress" msprop:Generator_ColumnVarNameInTable="columnConsumerAddress" msprop:Generator_ColumnPropNameInRow="ConsumerAddress" msprop:Generator_ColumnPropNameInTable="ConsumerAddressColumn" msprop:Generator_UserColumnName="ConsumerAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RequestView" msprop:Generator_TableClassName="RequestViewDataTable" msprop:Generator_TableVarName="tableRequestView" msprop:Generator_TablePropName="RequestView" msprop:Generator_RowDeletingName="RequestViewRowDeleting" msprop:Generator_RowChangingName="RequestViewRowChanging" msprop:Generator_RowEvHandlerName="RequestViewRowChangeEventHandler" msprop:Generator_RowDeletedName="RequestViewRowDeleted" msprop:Generator_UserTableName="RequestView" msprop:Generator_RowChangedName="RequestViewRowChanged" msprop:Generator_RowEvArgName="RequestViewRowChangeEvent" msprop:Generator_RowClassName="RequestViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReqID" msprop:Generator_ColumnVarNameInTable="columnReqID" msprop:Generator_ColumnPropNameInRow="ReqID" msprop:Generator_ColumnPropNameInTable="ReqIDColumn" msprop:Generator_UserColumnName="ReqID" type="xs:int" />
+              <xs:element name="ConsumerNo" msprop:Generator_ColumnVarNameInTable="columnConsumerNo" msprop:Generator_ColumnPropNameInRow="ConsumerNo" msprop:Generator_ColumnPropNameInTable="ConsumerNoColumn" msprop:Generator_UserColumnName="ConsumerNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserCr" msprop:Generator_ColumnVarNameInTable="columnUserCr" msprop:Generator_ColumnPropNameInRow="UserCr" msprop:Generator_ColumnPropNameInTable="UserCrColumn" msprop:Generator_UserColumnName="UserCr" type="xs:int" minOccurs="0" />
+              <xs:element name="DateCr" msprop:Generator_ColumnVarNameInTable="columnDateCr" msprop:Generator_ColumnPropNameInRow="DateCr" msprop:Generator_ColumnPropNameInTable="DateCrColumn" msprop:Generator_UserColumnName="DateCr" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TempID" msprop:Generator_ColumnVarNameInTable="columnTempID" msprop:Generator_ColumnPropNameInRow="TempID" msprop:Generator_ColumnPropNameInTable="TempIDColumn" msprop:Generator_UserColumnName="TempID" type="xs:int" minOccurs="0" />
+              <xs:element name="RequestListID" msprop:Generator_ColumnVarNameInTable="columnRequestListID" msprop:Generator_ColumnPropNameInRow="RequestListID" msprop:Generator_ColumnPropNameInTable="RequestListIDColumn" msprop:Generator_UserColumnName="RequestListID" type="xs:int" minOccurs="0" />
+              <xs:element name="Requests" msprop:Generator_ColumnVarNameInTable="columnRequests" msprop:Generator_ColumnPropNameInRow="Requests" msprop:Generator_ColumnPropNameInTable="RequestsColumn" msprop:Generator_UserColumnName="Requests" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConsumerName" msprop:Generator_ColumnVarNameInTable="columnConsumerName" msprop:Generator_ColumnPropNameInRow="ConsumerName" msprop:Generator_ColumnPropNameInTable="ConsumerNameColumn" msprop:Generator_UserColumnName="ConsumerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConsumerMob" msprop:Generator_ColumnVarNameInTable="columnConsumerMob" msprop:Generator_ColumnPropNameInRow="ConsumerMob" msprop:Generator_ColumnPropNameInTable="ConsumerMobColumn" msprop:Generator_UserColumnName="ConsumerMob" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ConsumerAddress" msprop:Generator_ColumnVarNameInTable="columnConsumerAddress" msprop:Generator_ColumnPropNameInRow="ConsumerAddress" msprop:Generator_ColumnPropNameInTable="ConsumerAddressColumn" msprop:Generator_UserColumnName="ConsumerAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ResolveBy" msprop:Generator_ColumnVarNameInTable="columnResolveBy" msprop:Generator_ColumnPropNameInRow="ResolveBy" msprop:Generator_ColumnPropNameInTable="ResolveByColumn" msprop:Generator_UserColumnName="ResolveBy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ResolveDate" msprop:Generator_ColumnVarNameInTable="columnResolveDate" msprop:Generator_ColumnPropNameInRow="ResolveDate" msprop:Generator_ColumnPropNameInTable="ResolveDateColumn" msprop:Generator_UserColumnName="ResolveDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResolvedComplaintsView" msprop:Generator_TableClassName="ResolvedComplaintsViewDataTable" msprop:Generator_TableVarName="tableResolvedComplaintsView" msprop:Generator_TablePropName="ResolvedComplaintsView" msprop:Generator_RowDeletingName="ResolvedComplaintsViewRowDeleting" msprop:Generator_RowChangingName="ResolvedComplaintsViewRowChanging" msprop:Generator_RowEvHandlerName="ResolvedComplaintsViewRowChangeEventHandler" msprop:Generator_RowDeletedName="ResolvedComplaintsViewRowDeleted" msprop:Generator_UserTableName="ResolvedComplaintsView" msprop:Generator_RowChangedName="ResolvedComplaintsViewRowChanged" msprop:Generator_RowEvArgName="ResolvedComplaintsViewRowChangeEvent" msprop:Generator_RowClassName="ResolvedComplaintsViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ComplaintID" msprop:Generator_ColumnVarNameInTable="columnComplaintID" msprop:Generator_ColumnPropNameInRow="ComplaintID" msprop:Generator_ColumnPropNameInTable="ComplaintIDColumn" msprop:Generator_UserColumnName="ComplaintID" type="xs:int" />
+              <xs:element name="ConsumerNo" msprop:Generator_ColumnVarNameInTable="columnConsumerNo" msprop:Generator_ColumnPropNameInRow="ConsumerNo" msprop:Generator_ColumnPropNameInTable="ConsumerNoColumn" msprop:Generator_UserColumnName="ConsumerNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TempID" msprop:Generator_ColumnVarNameInTable="columnTempID" msprop:Generator_ColumnPropNameInRow="TempID" msprop:Generator_ColumnPropNameInTable="TempIDColumn" msprop:Generator_UserColumnName="TempID" type="xs:int" minOccurs="0" />
+              <xs:element name="ConsumerName" msprop:Generator_ColumnVarNameInTable="columnConsumerName" msprop:Generator_ColumnPropNameInRow="ConsumerName" msprop:Generator_ColumnPropNameInTable="ConsumerNameColumn" msprop:Generator_UserColumnName="ConsumerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConsumerMob" msprop:Generator_ColumnVarNameInTable="columnConsumerMob" msprop:Generator_ColumnPropNameInRow="ConsumerMob" msprop:Generator_ColumnPropNameInTable="ConsumerMobColumn" msprop:Generator_UserColumnName="ConsumerMob" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ConsumerAddress" msprop:Generator_ColumnVarNameInTable="columnConsumerAddress" msprop:Generator_ColumnPropNameInRow="ConsumerAddress" msprop:Generator_ColumnPropNameInTable="ConsumerAddressColumn" msprop:Generator_UserColumnName="ConsumerAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComplaintDetails" msprop:Generator_ColumnVarNameInTable="columnComplaintDetails" msprop:Generator_ColumnPropNameInRow="ComplaintDetails" msprop:Generator_ColumnPropNameInTable="ComplaintDetailsColumn" msprop:Generator_UserColumnName="ComplaintDetails" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MachenicName" msprop:Generator_ColumnVarNameInTable="columnMachenicName" msprop:Generator_ColumnPropNameInRow="MachenicName" msprop:Generator_ColumnPropNameInTable="MachenicNameColumn" msprop:Generator_UserColumnName="MachenicName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComplaintStatus" msprop:Generator_ColumnVarNameInTable="columnComplaintStatus" msprop:Generator_ColumnPropNameInRow="ComplaintStatus" msprop:Generator_ColumnPropNameInTable="ComplaintStatusColumn" msprop:Generator_UserColumnName="ComplaintStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserCr" msprop:Generator_ColumnVarNameInTable="columnUserCr" msprop:Generator_ColumnPropNameInRow="UserCr" msprop:Generator_ColumnPropNameInTable="UserCrColumn" msprop:Generator_UserColumnName="UserCr" type="xs:int" minOccurs="0" />
+              <xs:element name="DateCr" msprop:Generator_ColumnVarNameInTable="columnDateCr" msprop:Generator_ColumnPropNameInRow="DateCr" msprop:Generator_ColumnPropNameInTable="DateCrColumn" msprop:Generator_UserColumnName="DateCr" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MachenicID" msprop:Generator_ColumnVarNameInTable="columnMachenicID" msprop:Generator_ColumnPropNameInRow="MachenicID" msprop:Generator_ColumnPropNameInTable="MachenicIDColumn" msprop:Generator_UserColumnName="MachenicID" type="xs:int" minOccurs="0" />
+              <xs:element name="InvoiceNo" msprop:Generator_ColumnVarNameInTable="columnInvoiceNo" msprop:Generator_ColumnPropNameInRow="InvoiceNo" msprop:Generator_ColumnPropNameInTable="InvoiceNoColumn" msprop:Generator_UserColumnName="InvoiceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AttendedDate" msprop:Generator_ColumnVarNameInTable="columnAttendedDate" msprop:Generator_ColumnPropNameInRow="AttendedDate" msprop:Generator_ColumnPropNameInTable="AttendedDateColumn" msprop:Generator_UserColumnName="AttendedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ResolveBy" msprop:Generator_ColumnVarNameInTable="columnResolveBy" msprop:Generator_ColumnPropNameInRow="ResolveBy" msprop:Generator_ColumnPropNameInTable="ResolveByColumn" msprop:Generator_UserColumnName="ResolveBy" type="xs:int" minOccurs="0" />
+              <xs:element name="ResolvedBy" msprop:Generator_ColumnVarNameInTable="columnResolvedBy" msprop:Generator_ColumnPropNameInRow="ResolvedBy" msprop:Generator_ColumnPropNameInTable="ResolvedByColumn" msprop:Generator_UserColumnName="ResolvedBy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AttendedRemark" msprop:Generator_ColumnVarNameInTable="columnAttendedRemark" msprop:Generator_ColumnPropNameInRow="AttendedRemark" msprop:Generator_ColumnPropNameInTable="AttendedRemarkColumn" msprop:Generator_UserColumnName="AttendedRemark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StockUsedView" msprop:Generator_TableClassName="StockUsedViewDataTable" msprop:Generator_TableVarName="tableStockUsedView" msprop:Generator_TablePropName="StockUsedView" msprop:Generator_RowDeletingName="StockUsedViewRowDeleting" msprop:Generator_RowChangingName="StockUsedViewRowChanging" msprop:Generator_RowEvHandlerName="StockUsedViewRowChangeEventHandler" msprop:Generator_RowDeletedName="StockUsedViewRowDeleted" msprop:Generator_UserTableName="StockUsedView" msprop:Generator_RowChangedName="StockUsedViewRowChanged" msprop:Generator_RowEvArgName="StockUsedViewRowChangeEvent" msprop:Generator_RowClassName="StockUsedViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Machenic" msprop:Generator_ColumnVarNameInTable="columnMachenic" msprop:Generator_ColumnPropNameInRow="Machenic" msprop:Generator_ColumnPropNameInTable="MachenicColumn" msprop:Generator_UserColumnName="Machenic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="particular" msprop:Generator_ColumnVarNameInTable="columnparticular" msprop:Generator_ColumnPropNameInRow="particular" msprop:Generator_ColumnPropNameInTable="particularColumn" msprop:Generator_UserColumnName="particular" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="55" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComplaintID" msprop:Generator_ColumnVarNameInTable="columnComplaintID" msprop:Generator_ColumnPropNameInRow="ComplaintID" msprop:Generator_ColumnPropNameInTable="ComplaintIDColumn" msprop:Generator_UserColumnName="ComplaintID" type="xs:int" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="RATE" msprop:Generator_ColumnVarNameInTable="columnRATE" msprop:Generator_ColumnPropNameInRow="RATE" msprop:Generator_ColumnPropNameInTable="RATEColumn" msprop:Generator_UserColumnName="RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AttendedDate" msprop:Generator_ColumnVarNameInTable="columnAttendedDate" msprop:Generator_ColumnPropNameInRow="AttendedDate" msprop:Generator_ColumnPropNameInTable="AttendedDateColumn" msprop:Generator_UserColumnName="AttendedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ParticularID" msprop:Generator_ColumnVarNameInTable="columnParticularID" msprop:Generator_ColumnPropNameInRow="ParticularID" msprop:Generator_ColumnPropNameInTable="ParticularIDColumn" msprop:Generator_UserColumnName="ParticularID" type="xs:int" minOccurs="0" />
+              <xs:element name="MachenicID" msprop:Generator_ColumnVarNameInTable="columnMachenicID" msprop:Generator_ColumnPropNameInRow="MachenicID" msprop:Generator_ColumnPropNameInTable="MachenicIDColumn" msprop:Generator_UserColumnName="MachenicID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
